@@ -1,0 +1,421 @@
+{
+	"id": "c2f7fec096d42657ddd39eed31c1cc88",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.4.17",
+	"solcLongVersion": "0.4.17+commit.bdeb9e52",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/First.sol": {
+				"content": "pragma solidity ^0.4.17;\r\n\r\ncontract Production {\r\n        string[] serialNo;\r\n\r\n        struct Product {       \r\n    }\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/First.sol": {
+				"Production": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/First.sol\":28:122  contract Production {\r... */\n  mstore(0x40, 0x60)\n  jumpi(tag_1, iszero(callvalue))\n  0x0\n  dup1\n  revert\ntag_1:\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x0\n  codecopy\n  0x0\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/First.sol\":28:122  contract Production {\r... */\n      mstore(0x40, 0x60)\n      0x0\n      dup1\n      revert\n\n    auxdata: 0xa165627a7a723058209f4a6e5634534d2979d2f34b5b68dbc58611e48c1851e8ada2eaa77a07a902a00029\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a723058209f4a6e5634534d2979d2f34b5b68dbc58611e48c1851e8ada2eaa77a07a902a00029",
+							"opcodes": "PUSH1 0x60 PUSH1 0x40 MSTORE CALLVALUE ISZERO PUSH1 0xE JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x35 DUP1 PUSH1 0x1B PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x60 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 SWAP16 0x4a PUSH15 0x5634534D2979D2F34B5B68DBC58611 0xe4 DUP13 XOR MLOAD 0xe8 0xad LOG2 0xea 0xa7 PUSH27 0x7A902A00029000000000000000000000000000000000000000000 ",
+							"sourceMap": "28:94:0:-;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6060604052600080fd00a165627a7a723058209f4a6e5634534d2979d2f34b5b68dbc58611e48c1851e8ada2eaa77a07a902a00029",
+							"opcodes": "PUSH1 0x60 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 SWAP16 0x4a PUSH15 0x5634534D2979D2F34B5B68DBC58611 0xe4 DUP13 XOR MLOAD 0xe8 0xad LOG2 0xea 0xa7 PUSH27 0x7A902A00029000000000000000000000000000000000000000000 ",
+							"sourceMap": "28:94:0:-;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "10600",
+								"executionCost": "61",
+								"totalCost": "10661"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "PUSH",
+									"value": "60"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "DUP1"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "REVERT"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "DUP1"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 28,
+									"end": 122,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a165627a7a723058209f4a6e5634534d2979d2f34b5b68dbc58611e48c1851e8ada2eaa77a07a902a00029",
+									".code": [
+										{
+											"begin": 28,
+											"end": 122,
+											"name": "PUSH",
+											"value": "60"
+										},
+										{
+											"begin": 28,
+											"end": 122,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 28,
+											"end": 122,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 28,
+											"end": 122,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 28,
+											"end": 122,
+											"name": "DUP1"
+										},
+										{
+											"begin": 28,
+											"end": 122,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.4.17+commit.bdeb9e52\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/First.sol\":\"Production\"},\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/First.sol\":{\"keccak256\":\"0x78511ed416f1c730f357474e54ab018166fc6a0e01cfaaf1d1c5ed74d89ebb42\",\"urls\":[\"bzzr://7d6c3b4d1cea32f70c2a80c1edd1beaeb4f07a9eb03a593bf34f32357a19e279\"]}},\"version\":1}",
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/First.sol": {
+				"ast": {
+					"absolutePath": "contracts/First.sol",
+					"exportedSymbols": {
+						"Production": [
+							6
+						]
+					},
+					"id": 7,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.4",
+								".17"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:24:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 6,
+							"linearizedBaseContracts": [
+								6
+							],
+							"name": "Production",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 4,
+									"name": "serialNo",
+									"nodeType": "VariableDeclaration",
+									"scope": 6,
+									"src": "59:17:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
+										"typeString": "string storage ref[] storage ref"
+									},
+									"typeName": {
+										"baseType": {
+											"id": 2,
+											"name": "string",
+											"nodeType": "ElementaryTypeName",
+											"src": "59:6:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string storage pointer"
+											}
+										},
+										"id": 3,
+										"length": null,
+										"nodeType": "ArrayTypeName",
+										"src": "59:8:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
+											"typeString": "string storage ref[] storage pointer"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"canonicalName": "Production.Product",
+									"id": 5,
+									"members": [],
+									"name": "Product",
+									"nodeType": "StructDefinition",
+									"scope": 6,
+									"src": "89:30:0",
+									"visibility": "public"
+								}
+							],
+							"scope": 7,
+							"src": "28:94:0"
+						}
+					],
+					"src": "0:122:0"
+				},
+				"id": 0,
+				"legacyAST": {
+					"attributes": {
+						"absolutePath": "contracts/First.sol",
+						"exportedSymbols": {
+							"Production": [
+								6
+							]
+						}
+					},
+					"children": [
+						{
+							"attributes": {
+								"literals": [
+									"solidity",
+									"^",
+									"0.4",
+									".17"
+								]
+							},
+							"id": 1,
+							"name": "PragmaDirective",
+							"src": "0:24:0"
+						},
+						{
+							"attributes": {
+								"baseContracts": [
+									null
+								],
+								"contractDependencies": [
+									null
+								],
+								"contractKind": "contract",
+								"documentation": null,
+								"fullyImplemented": true,
+								"linearizedBaseContracts": [
+									6
+								],
+								"name": "Production",
+								"scope": 7
+							},
+							"children": [
+								{
+									"attributes": {
+										"constant": false,
+										"name": "serialNo",
+										"scope": 6,
+										"stateVariable": true,
+										"storageLocation": "default",
+										"type": "string storage ref[] storage ref",
+										"value": null,
+										"visibility": "internal"
+									},
+									"children": [
+										{
+											"attributes": {
+												"length": null,
+												"type": "string storage ref[] storage pointer"
+											},
+											"children": [
+												{
+													"attributes": {
+														"name": "string",
+														"type": "string storage pointer"
+													},
+													"id": 2,
+													"name": "ElementaryTypeName",
+													"src": "59:6:0"
+												}
+											],
+											"id": 3,
+											"name": "ArrayTypeName",
+											"src": "59:8:0"
+										}
+									],
+									"id": 4,
+									"name": "VariableDeclaration",
+									"src": "59:17:0"
+								},
+								{
+									"attributes": {
+										"canonicalName": "Production.Product",
+										"members": [
+											null
+										],
+										"name": "Product",
+										"scope": 6,
+										"visibility": "public"
+									},
+									"id": 5,
+									"name": "StructDefinition",
+									"src": "89:30:0"
+								}
+							],
+							"id": 6,
+							"name": "ContractDefinition",
+							"src": "28:94:0"
+						}
+					],
+					"id": 7,
+					"name": "SourceUnit",
+					"src": "0:122:0"
+				}
+			}
+		}
+	}
+}

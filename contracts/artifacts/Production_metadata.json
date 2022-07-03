@@ -1,0 +1,101 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "sn",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkSerial",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "launch",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "Num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "regSer",
+						"type": "bytes32"
+					}
+				],
+				"name": "regWarranty",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/productReg.sol": "Production"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/productReg.sol": {
+			"keccak256": "0x2ed96cc518dddb0e7bb96dc6276240f25637bd57260e7abb1450b1906620854d",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://e67ca0160ef789b93b7dbe823cad28a97091975e12c3239f06ba9ec162ee4c50",
+				"dweb:/ipfs/QmUGfi1BKHBbWjqGZ5zhKyhnE99RrZpoMyVdx7tgbKG1jW"
+			]
+		}
+	},
+	"version": 1
+}
