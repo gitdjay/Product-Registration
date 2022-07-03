@@ -15,10 +15,10 @@ How to use?
 </h2>
 - Company is given option to either set pre-defined serial numbers kept in contract or a function call can generate serial numbers themselves which can be done by <br> 
 # launch button <br>
-- User can verify their serial number using 
+- User can verify their serial number using <br> 
 # checkSerial <br>
-= User can register their product by initiating a transaction using
-# regWarranty 
+- User can register their product by initiating a transaction using <br>
+# regWarranty <br>
 
 <br>
 
